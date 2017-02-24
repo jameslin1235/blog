@@ -11,7 +11,7 @@ For the full list of settings and their values, see
 """
 
 import os
-import dj_database_url
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -124,11 +124,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
-
-# Update database configuration with $DATABASE_URL.
-DATABASES = { 'default': dj_database_url.config(conn_max_age=500) }
-# db_from_env = dj_database_url.config(conn_max_age=500)
-# DATABASES['default'].update(db_from_env)
 
 
 # Simplified static file serving.
