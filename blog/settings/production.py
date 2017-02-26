@@ -26,7 +26,7 @@ SECRET_KEY = '0rixjkbi)qp5)k0hp^8jgx$0dv)pfby70=09_ot(hn2pkh-ga!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['pure-inlet-83214.herokuapp.com']
+ALLOWED_HOSTS = ['45.56.101.153']
 
 
 # Application definition
@@ -73,6 +73,19 @@ TEMPLATES = [
 WSGI_APPLICATION = 'blog.wsgi.application'
 
 
+# Database
+# https://docs.djangoproject.com/en/1.10/ref/settings/#databases
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'deployer',
+        'USER': 'deployerr',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
 
 
 
